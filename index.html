@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ZNA</title>
+    <!-- css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+<body>
+  <!--landing-section-->
+  <div class="landing-section">
+    <!-- nav start -->
+    <div class="navbar-fixed">
+      <nav>
+          <div class="nav-wrapper">
+              <a href="index.html" class="brand-logo center">zna</a>
+          </div>
+      </nav>
+    </div>
+    <!-- end nav -->
+    <!-- input image -->
+    <div class="container log-section valign-wrapper">
+          <div class="valign">
+                <h1 class="intro">Snap your Macros and Micros</h1>
+                <h2 class="intro">gen z nutritional analysis</h2>
+                <!--upload-care-->
+                <p class="uploader-green-button">
+                  <input id="upload" type="hidden" role="uploadcare-uploader" name="food-img"/>
+                </p>
+          </div>
+    </div>
+  </div>
+  <!--footer-->
+  <footer class="page-footer cyan darken-1">
+      <div class="container">
+          <div class="row valign-wrapper">
+              <div class="col l6 s12">
+                  <h5 class="white-text">Zna</h5>
+                  <p class="grey-text text-lighten-4">Gen Z Nutritional Analysis</p>
+              </div>
+              <div class="col l4 offset-l2 s12 ">
+                  <ul>
+                      <li><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
+                      <li><a class="grey-text text-lighten-3" href="team.html">Team</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="footer-copyright">
+          <div class="container">
+              © 2017 Zna
+          </div>
+      </div>
+  </footer>
+  <!--keys-->
+  <script type="text/javascript" src="assets/private_keys.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" charset="utf-8"></script>
+  <!--materialize-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+  <!-- uploadcare -->
+  <script src="https://ucarecdn.com/libs/widget/2.10.3/uploadcare.min.js" charset="utf-8"></script>
+  <!-- clarafai -->
+  <script type="text/javascript" src="https://sdk.clarifai.com/js/clarifai-latest.js"></script>
+  <script>
+  var app = new Clarifai.App(
+    clientId,
+    clientSecret
+  );
+  </script>
+  <!--main js file-->
+  <script type="text/javascript" src="assets/script.js"></script>
+</body>
+</html>
